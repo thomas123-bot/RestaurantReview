@@ -1,3 +1,8 @@
+// Initialize EmailJS
+(function(){
+    emailjs.init("KOU_zWZjy4sBHeZph"); // Your actual EmailJS user ID
+})();
+
 document.getElementById("review-form").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent default form submission
 
@@ -31,7 +36,7 @@ document.getElementById("review-form").addEventListener("submit", function(event
         recommendations: recommendations
     }).then(function(response) {
         // Show success message
-        alert("Form submitted successfully!");
+        alert("Your review submitted successfully!!");
         document.getElementById("review-form").reset(); // Optional: Reset form after submission
     }, function(error) {
         // Show error message
