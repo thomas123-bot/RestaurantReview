@@ -1,0 +1,165 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    width: 60%;
+    margin: auto;
+    border: 4px double #333;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: #333366;
+    text-transform: uppercase;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 160px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    margin: 2px;
+    font-size: 1.1em;
+    color: #555;
+    font-weight: bold;
+}
+
+.message {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.suggestion-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #222;
+    margin-top: 30px;
+    border-top: 2px solid #333;
+    padding-top: 10px;
+}
+
+.suggestion-subtitle {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+    text-transform: uppercase;
+}
+
+input[type="text"], input[type="date"], input[type="email"], textarea {
+    width: 95%;
+    padding: 12px;
+    margin: 5px 0 15px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.rating-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.rating-group label {
+    color: #333366;
+    font-size: 1.1em;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .form-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .header img {
+        width: 120px;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+
+    .suggestion-title {
+        font-size: 1.2em;
+    }
+
+    .suggestion-subtitle {
+        font-size: 0.9em;
+    }
+
+    input[type="text"], input[type="date"], input[type="email"], textarea {
+        font-size: 0.9em;
+    }
+
+    .submit-btn {
+        font-size: 1.1em;
+        padding: 10px;
+    }
+}

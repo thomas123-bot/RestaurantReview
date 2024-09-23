@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Review Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-container">
+    <!-- Header with Logo, Name, Address -->
+    <div class="header">
+        <img src="LOGO.JPG" alt="Restaurant Logo">
+        <h2>Gold Coin Family Deluxe Restaurant-N-Bar</h2>
+        <p>Golden Park, Near Parvati Theater, Vasai Road (W), Dist. Thane - 401 202</p>
+        <p>Tel: (0250) 2337561 / 2341137 / 3299033 / 3299044</p>
+    </div>
+
+    <!-- Message to the guest -->
+    <div class="message">
+        <p>Dear Guest,</p>
+        <p>Kindly fill up this Suggestion Card and tell us what you think about our cuisine and service.</p>
+        <p>This will enable us to serve you better in the future. Thank you for your time.</p>
+    </div>
+
+    <!-- Suggestions Title -->
+    <div class="suggestion-title">Suggestions</div>
+    <div class="suggestion-subtitle">Please tick wherever applicable</div>
+
+    <!-- Review Form -->
+    <form id="review-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+
+        <div class="form-group">
+            <label for="anniversary">Wedding Anniversary:</label>
+            <input type="date" id="anniversary" name="anniversary">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Mobile:</label>
+            <input type="text" id="mobile" name="mobile">
+        </div>
+
+        <div class="form-group">
+            <label>Quality of Food:</label>
+            <p>1) Indian</p>
+            <div class="rating-group">
+                <label><input type="radio" name="indian_food" value="Excellent"> Excellent</label>
+                <label><input type="radio" name="indian_food" value="Good"> Good</label>
+                <label><input type="radio" name="indian_food" value="Fair"> Fair</label>
+                <label><input type="radio" name="indian_food" value="Poor"> Poor</label>
+            </div>
+            <p>2) Tandoor & Kababs</p>
+            <div class="rating-group">
+                <label><input type="radio" name="tandoor_kababs" value="Excellent"> Excellent</label>
+                <label><input type="radio" name="tandoor_kababs" value="Good"> Good</label>
+                <label><input type="radio" name="tandoor_kababs" value="Fair"> Fair</label>
+                <label><input type="radio" name="tandoor_kababs" value="Poor"> Poor</label>
+            </div>
+            <p>3) Chinese</p>
+            <div class="rating-group">
+                <label><input type="radio" name="chinese_food" value="Excellent"> Excellent</label>
+                <label><input type="radio" name="chinese_food" value="Good"> Good</label>
+                <label><input type="radio" name="chinese_food" value="Fair"> Fair</label>
+                <label><input type="radio" name="chinese_food" value="Poor"> Poor</label>
+            </div>
+            <p>4) Seafood</p>
+            <div class="rating-group">
+                <label><input type="radio" name="seafood" value="Excellent"> Excellent</label>
+                <label><input type="radio" name="seafood" value="Good"> Good</label>
+                <label><input type="radio" name="seafood" value="Fair"> Fair</label>
+                <label><input type="radio" name="seafood" value="Poor"> Poor</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Quality of Service:</label>
+            <textarea name="service_quality" rows="4" placeholder="Please leave your comments..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Additional Recommendations:</label>
+            <textarea name="recommendations" rows="4" placeholder="Any other recommendations..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Review</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
